@@ -13,7 +13,7 @@
 		65565230699A20AA2DB525E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655658566370F09ED204B20F /* UIKit.framework */; };
 		655654D9678AE1B6F99607A1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655657105179E8471B0B87D1 /* MainStoryboard.storyboard */; };
 		6556566CA08EAC8F779FCED2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655658566370F09ED204B20F /* UIKit.framework */; };
-		6556567EF5D782B9FB23AE47 /* FLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65565D615AA9824811178333 /* FLViewController.m */; };
+		6556567EF5D782B9FB23AE47 /* FLAccelerometerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65565D615AA9824811178333 /* FLAccelerometerTestViewController.m */; };
 		655659765ABC3DD1681DEC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655654D665989F7A8BFB9265 /* Foundation.framework */; };
 		65565A21DD5805CE9A1DFF7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655654D665989F7A8BFB9265 /* Foundation.framework */; };
 		65565A2750CE5D9960FD3352 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6556507CB9F2779530C2809D /* CoreGraphics.framework */; };
@@ -42,14 +42,14 @@
 		655655DEC780C75B262CEE22 /* flipperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flipperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655655E94D318A88410A2915 /* flipper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "flipper-Info.plist"; sourceTree = "<group>"; };
 		655656438DD886E7A6BBABB8 /* FLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAppDelegate.h; sourceTree = "<group>"; };
-		655656EB8DCFA292739FFDCF /* FLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewController.h; sourceTree = "<group>"; };
+		655656EB8DCFA292739FFDCF /* FLAccelerometerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAccelerometerTestViewController.h; sourceTree = "<group>"; };
 		655658566370F09ED204B20F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		655659D70B03596D131F45B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65565AD28A85F8C34B5E947D /* flipperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flipperTests.m; sourceTree = "<group>"; };
 		65565AE1D0F2C0958C740A35 /* flipperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "flipperTests-Info.plist"; sourceTree = "<group>"; };
 		65565CCA51703510671066B8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		65565D19B4D85C6E7E755580 /* flipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65565D615AA9824811178333 /* FLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewController.m; sourceTree = "<group>"; };
+		65565D615AA9824811178333 /* FLAccelerometerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAccelerometerTestViewController.m; sourceTree = "<group>"; };
 		65565FE836C345F5A970520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65565FF54C77B2489B71EE39 /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,8 +121,8 @@
 		65565C7E85428AD72E46133E /* flipper */ = {
 			isa = PBXGroup;
 			children = (
-				65565D615AA9824811178333 /* FLViewController.m */,
-				655656EB8DCFA292739FFDCF /* FLViewController.h */,
+				65565D615AA9824811178333 /* FLAccelerometerTestViewController.m */,
+				655656EB8DCFA292739FFDCF /* FLAccelerometerTestViewController.h */,
 				655657105179E8471B0B87D1 /* MainStoryboard.storyboard */,
 				65565FF54C77B2489B71EE39 /* FLAppDelegate.m */,
 				655656438DD886E7A6BBABB8 /* FLAppDelegate.h */,
@@ -256,7 +256,7 @@
 			files = (
 				65565119FBA3E74BB7FB79A5 /* main.m in Sources */,
 				65565FFDB60FCFAC802D3CE7 /* FLAppDelegate.m in Sources */,
-				6556567EF5D782B9FB23AE47 /* FLViewController.m in Sources */,
+				6556567EF5D782B9FB23AE47 /* FLAccelerometerTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
