@@ -7,11 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFlipperMotionManager.h"
 
-@interface FLAccelerometerTestViewController : UIViewController <UIAccelerometerDelegate>
+@interface FLAccelerometerTestViewController : UIViewController
+{
+    CFlipperMotionManager *m_motionManager;
+}
+@property(nonatomic, retain) IBOutlet UILabel *xAccelLabel;
+@property(nonatomic, retain) IBOutlet UILabel *yAccelLabel;
+@property(nonatomic, retain) IBOutlet UILabel *zAccelLabel;
 
-@property(nonatomic, retain) IBOutlet UILabel *xLabel;
-@property(nonatomic, retain) IBOutlet UILabel *yLabel;
-@property(nonatomic, retain) IBOutlet UILabel *zLabel;
+@property(nonatomic, retain) IBOutlet UILabel *xGyroLabel;
+@property(nonatomic, retain) IBOutlet UILabel *yGyroLabel;
+@property(nonatomic, retain) IBOutlet UILabel *zGyroLabel;
 
+-(IBAction)startButtonAction: (id)sender;
+-(IBAction)stopButtonAction:  (id)sender;
+-(IBAction)clearButtonAction: (id)sender;
+-(IBAction)sendButtonAction: (id)sender;
 @end

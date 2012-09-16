@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CFlipperAccelerometrPoint" syncable="YES">
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="x" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="z" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="point" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CFlipperDataPoint" inverseName="accelerometer" inverseEntity="CFlipperDataPoint" syncable="YES"/>
+    </entity>
+    <entity name="CFlipperDataList" syncable="YES">
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <relationship name="points" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CFlipperDataPoint" inverseName="list" inverseEntity="CFlipperDataPoint" syncable="YES"/>
+    </entity>
+    <entity name="CFlipperDataPoint" syncable="YES">
+        <relationship name="accelerometer" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CFlipperAccelerometrPoint" inverseName="point" inverseEntity="CFlipperAccelerometrPoint" syncable="YES"/>
+        <relationship name="gyroscope" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="CFlipperGyroscopePoint" inverseName="point" inverseEntity="CFlipperGyroscopePoint" syncable="YES"/>
+        <relationship name="list" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CFlipperDataList" inverseName="points" inverseEntity="CFlipperDataList" syncable="YES"/>
+    </entity>
+    <entity name="CFlipperGyroscopePoint" syncable="YES">
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="x" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="z" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="point" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CFlipperDataPoint" inverseName="gyroscope" inverseEntity="CFlipperDataPoint" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CFlipperDataList" positionX="-6732" positionY="-360" width="128" height="75"/>
+        <element name="CFlipperDataPoint" positionX="-6471" positionY="-396" width="128" height="90"/>
+        <element name="CFlipperAccelerometrPoint" positionX="-6246" positionY="-567" width="191" height="120"/>
+        <element name="CFlipperGyroscopePoint" positionX="-6248" positionY="-297" width="191" height="120"/>
+    </elements>
+</model>

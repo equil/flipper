@@ -20,6 +20,12 @@
 		65565E9C94B9A0EA59B0F91F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65565CCA51703510671066B8 /* SenTestingKit.framework */; };
 		65565F40A44497A9401FBCA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65565F8E34902553C9D34EA5 /* InfoPlist.strings */; };
 		65565FFDB60FCFAC802D3CE7 /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65565FF54C77B2489B71EE39 /* FLAppDelegate.m */; };
+		87D51F7616063FD3006BCF53 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D51F7516063FD3006BCF53 /* CoreMotion.framework */; };
+		87D51F7A16064004006BCF53 /* CFlipperMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D51F7916064004006BCF53 /* CFlipperMotionManager.m */; };
+		87D51F7D16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D51F7B16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld */; };
+		87D51F8016065171006BCF53 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D51F7F16065171006BCF53 /* CoreData.framework */; };
+		87D51F831606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D51F821606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.m */; };
+		87D51F86160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D51F85160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,15 @@
 		65565D615AA9824811178333 /* FLAccelerometerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAccelerometerTestViewController.m; sourceTree = "<group>"; };
 		65565FE836C345F5A970520B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65565FF54C77B2489B71EE39 /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
+		87D51F7516063FD3006BCF53 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		87D51F7816064004006BCF53 /* CFlipperMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFlipperMotionManager.h; sourceTree = "<group>"; };
+		87D51F7916064004006BCF53 /* CFlipperMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFlipperMotionManager.m; sourceTree = "<group>"; };
+		87D51F7C16064C03006BCF53 /* MCDFlipperModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MCDFlipperModel.xcdatamodel; sourceTree = "<group>"; };
+		87D51F7F16065171006BCF53 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		87D51F811606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMGyroData+CMGyroData_CoreDataConverter.h"; sourceTree = "<group>"; };
+		87D51F821606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMGyroData+CMGyroData_CoreDataConverter.m"; sourceTree = "<group>"; };
+		87D51F84160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMAccelerometerData+CMAccelerometerData_CoreDataConverter.h"; sourceTree = "<group>"; };
+		87D51F85160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D51F8016065171006BCF53 /* CoreData.framework in Frameworks */,
+				87D51F7616063FD3006BCF53 /* CoreMotion.framework in Frameworks */,
 				6556566CA08EAC8F779FCED2 /* UIKit.framework in Frameworks */,
 				655659765ABC3DD1681DEC8C /* Foundation.framework in Frameworks */,
 				65565A2750CE5D9960FD3352 /* CoreGraphics.framework in Frameworks */,
@@ -110,6 +127,7 @@
 		655659A70BA0E3BBB3F94B78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87D51F7516063FD3006BCF53 /* CoreMotion.framework */,
 				65565CCA51703510671066B8 /* SenTestingKit.framework */,
 				6556507CB9F2779530C2809D /* CoreGraphics.framework */,
 				655654D665989F7A8BFB9265 /* Foundation.framework */,
@@ -121,8 +139,12 @@
 		65565C7E85428AD72E46133E /* flipper */ = {
 			isa = PBXGroup;
 			children = (
-				65565D615AA9824811178333 /* FLAccelerometerTestViewController.m */,
+				87D51F7E1606512B006BCF53 /* coredata_model */,
+				87D51F7B16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld */,
+				87D51F7816064004006BCF53 /* CFlipperMotionManager.h */,
+				87D51F7916064004006BCF53 /* CFlipperMotionManager.m */,
 				655656EB8DCFA292739FFDCF /* FLAccelerometerTestViewController.h */,
+				65565D615AA9824811178333 /* FLAccelerometerTestViewController.m */,
 				655657105179E8471B0B87D1 /* MainStoryboard.storyboard */,
 				65565FF54C77B2489B71EE39 /* FLAppDelegate.m */,
 				655656438DD886E7A6BBABB8 /* FLAppDelegate.h */,
@@ -134,6 +156,7 @@
 		65565E608BB5BA1414A7697D = {
 			isa = PBXGroup;
 			children = (
+				87D51F7F16065171006BCF53 /* CoreData.framework */,
 				65565063AF71C21966CD42D9 /* Products */,
 				655659A70BA0E3BBB3F94B78 /* Frameworks */,
 				65565C7E85428AD72E46133E /* flipper */,
@@ -149,6 +172,17 @@
 				65565360280FAC6E186121D7 /* Supporting Files */,
 			);
 			path = flipperTests;
+			sourceTree = "<group>";
+		};
+		87D51F7E1606512B006BCF53 /* coredata_model */ = {
+			isa = PBXGroup;
+			children = (
+				87D51F811606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.h */,
+				87D51F821606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.m */,
+				87D51F84160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.h */,
+				87D51F85160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m */,
+			);
+			name = coredata_model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +291,10 @@
 				65565119FBA3E74BB7FB79A5 /* main.m in Sources */,
 				65565FFDB60FCFAC802D3CE7 /* FLAppDelegate.m in Sources */,
 				6556567EF5D782B9FB23AE47 /* FLAccelerometerTestViewController.m in Sources */,
+				87D51F7A16064004006BCF53 /* CFlipperMotionManager.m in Sources */,
+				87D51F7D16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld in Sources */,
+				87D51F831606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.m in Sources */,
+				87D51F86160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +482,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		87D51F7B16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87D51F7C16064C03006BCF53 /* MCDFlipperModel.xcdatamodel */,
+			);
+			currentVersion = 87D51F7C16064C03006BCF53 /* MCDFlipperModel.xcdatamodel */;
+			name = MCDFlipperModel.xcdatamodeld;
+			path = ../MCDFlipperModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65565B07824EB7D9B53EB6E0 /* Project object */;
 }

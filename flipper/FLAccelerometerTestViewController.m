@@ -14,30 +14,59 @@
 
 @implementation FLAccelerometerTestViewController
 
-@synthesize xLabel = _xLabel;
-@synthesize yLabel = _yLabel;
-@synthesize zLabel = _zLabel;
+@synthesize xAccelLabel = m_xAccelLabel;
+@synthesize yAccelLabel = m_yAccelLabel;
+@synthesize zAccelLabel = m_zAccelLabel;
 
+@synthesize xGyroLabel = m_xGyroLabel;
+@synthesize yGyroLabel = m_yGyroLabel;
+@synthesize zGyroLabel = m_zGyroLabel;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1.0/180.0];
-    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+    m_motionManager = [[CFlipperMotionManager alloc] initWithAccelerometrBlock:^(CMAccelerometerData *aAccelerometrData)
+    {
+        m_xAccelLabel.text = [NSString stringWithFormat:@"%f", aAccelerometrData.acceleration.x];
+        m_yAccelLabel.text = [NSString stringWithFormat:@"%f", aAccelerometrData.acceleration.y];
+        m_zAccelLabel.text = [NSString stringWithFormat:@"%f", aAccelerometrData.acceleration.z];
+    }
+    andGyroBlock:^(CMGyroData *aGyroData)
+    {
+        m_xGyroLabel.text = [NSString stringWithFormat:@"%f", aGyroData.rotationRate.x];
+        m_yGyroLabel.text = [NSString stringWithFormat:@"%f", aGyroData.rotationRate.y];
+        m_zGyroLabel.text = [NSString stringWithFormat:@"%f", aGyroData.rotationRate.z];
+    }];
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload
+{
     [super viewDidUnload];
 }
 
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
-    _xLabel.text = [NSString stringWithFormat:@"%f", acceleration.x];
-    _yLabel.text = [NSString stringWithFormat:@"%f", acceleration.y];
-    _zLabel.text = [NSString stringWithFormat:@"%f", acceleration.z];
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+-(IBAction)startButtonAction: (id)sender
+{
+    [m_motionManager start];
+}
+
+-(IBAction)stopButtonAction:  (id)sender
+{
+    [m_motionManager stop];
+}
+
+-(IBAction)clearButtonAction: (id)sender
+{
+    
+}
+
+-(IBAction)sendButtonAction: (id)sender
+{
+    
 }
 
 @end
