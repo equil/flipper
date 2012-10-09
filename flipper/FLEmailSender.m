@@ -8,9 +8,9 @@
 
 #import "FLEmailSender.h"
 
-static NSString *email = @"fredformout@yandex.ru";
-static NSString *pass = @"f1r2e3d4yandex";
-static NSString *smtp = @"smtp.yandex.ru";
+static NSString *email = @"";
+static NSString *pass = @"";
+static NSString *smtp = @"";
 
 @implementation FLEmailSender
 
