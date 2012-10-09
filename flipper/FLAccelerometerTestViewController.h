@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CFlipperMotionManager.h"
+#import "FLEmailSender.h"
 
 @interface FLAccelerometerTestViewController : UIViewController
 {
@@ -20,6 +21,8 @@
 @property(nonatomic, retain) IBOutlet UILabel *xGyroLabel;
 @property(nonatomic, retain) IBOutlet UILabel *yGyroLabel;
 @property(nonatomic, retain) IBOutlet UILabel *zGyroLabel;
+
+@property (nonatomic, retain) FLEmailSender *emailSender;
 
 -(IBAction)startButtonAction: (id)sender;
 -(IBAction)stopButtonAction:  (id)sender;

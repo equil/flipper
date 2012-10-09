@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EF736801624611800008094 /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF736771624611800008094 /* Base64Transcoder.m */; };
+		1EF736811624611800008094 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF736791624611800008094 /* HSK_CFUtilities.m */; };
+		1EF736821624611800008094 /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7367B1624611800008094 /* NSData+Base64Additions.m */; };
+		1EF736831624611800008094 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7367D1624611800008094 /* NSStream+SKPSMTPExtensions.m */; };
+		1EF736841624611800008094 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7367F1624611800008094 /* SKPSMTPMessage.m */; };
+		1EF736861624614300008094 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF736851624614300008094 /* CFNetwork.framework */; };
+		1EF736871624637E00008094 /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF736771624611800008094 /* Base64Transcoder.m */; };
+		1EF736881624637E00008094 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF736791624611800008094 /* HSK_CFUtilities.m */; };
+		1EF736891624637E00008094 /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7367B1624611800008094 /* NSData+Base64Additions.m */; };
+		1EF7368A1624637E00008094 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7367D1624611800008094 /* NSStream+SKPSMTPExtensions.m */; };
+		1EF7368B1624637E00008094 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7367F1624611800008094 /* SKPSMTPMessage.m */; };
+		1EF7368E1624654600008094 /* FLEmailSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7368D1624654600008094 /* FLEmailSender.m */; };
 		65565119FBA3E74BB7FB79A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 655659D70B03596D131F45B4 /* main.m */; };
 		655651690B65D14BB03E1C59 /* flipperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65565AD28A85F8C34B5E947D /* flipperTests.m */; };
 		655651DF138C49819BA1511F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 655651F309061B1450B273D3 /* InfoPlist.strings */; };
@@ -39,6 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EF736761624611800008094 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64Transcoder.h; path = EmailSender/Base64Transcoder.h; sourceTree = "<group>"; };
+		1EF736771624611800008094 /* Base64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64Transcoder.m; path = EmailSender/Base64Transcoder.m; sourceTree = "<group>"; };
+		1EF736781624611800008094 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSK_CFUtilities.h; path = EmailSender/HSK_CFUtilities.h; sourceTree = "<group>"; };
+		1EF736791624611800008094 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSK_CFUtilities.m; path = EmailSender/HSK_CFUtilities.m; sourceTree = "<group>"; };
+		1EF7367A1624611800008094 /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64Additions.h"; path = "EmailSender/NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		1EF7367B1624611800008094 /* NSData+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64Additions.m"; path = "EmailSender/NSData+Base64Additions.m"; sourceTree = "<group>"; };
+		1EF7367C1624611800008094 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSStream+SKPSMTPExtensions.h"; path = "EmailSender/NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		1EF7367D1624611800008094 /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSStream+SKPSMTPExtensions.m"; path = "EmailSender/NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		1EF7367E1624611800008094 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKPSMTPMessage.h; path = EmailSender/SKPSMTPMessage.h; sourceTree = "<group>"; };
+		1EF7367F1624611800008094 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKPSMTPMessage.m; path = EmailSender/SKPSMTPMessage.m; sourceTree = "<group>"; };
+		1EF736851624614300008094 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1EF7368C1624654600008094 /* FLEmailSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEmailSender.h; sourceTree = "<group>"; };
+		1EF7368D1624654600008094 /* FLEmailSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEmailSender.m; sourceTree = "<group>"; };
 		6556507CB9F2779530C2809D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		655650962DF3395B727644BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6556525863F5F5A18C1998AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -84,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF736861624614300008094 /* CFNetwork.framework in Frameworks */,
 				87D51F8016065171006BCF53 /* CoreData.framework in Frameworks */,
 				87D51F7616063FD3006BCF53 /* CoreMotion.framework in Frameworks */,
 				6556566CA08EAC8F779FCED2 /* UIKit.framework in Frameworks */,
@@ -95,6 +121,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EF736741624610500008094 /* email_sender */ = {
+			isa = PBXGroup;
+			children = (
+				1EF736761624611800008094 /* Base64Transcoder.h */,
+				1EF736771624611800008094 /* Base64Transcoder.m */,
+				1EF736781624611800008094 /* HSK_CFUtilities.h */,
+				1EF736791624611800008094 /* HSK_CFUtilities.m */,
+				1EF7367A1624611800008094 /* NSData+Base64Additions.h */,
+				1EF7367B1624611800008094 /* NSData+Base64Additions.m */,
+				1EF7367C1624611800008094 /* NSStream+SKPSMTPExtensions.h */,
+				1EF7367D1624611800008094 /* NSStream+SKPSMTPExtensions.m */,
+				1EF7367E1624611800008094 /* SKPSMTPMessage.h */,
+				1EF7367F1624611800008094 /* SKPSMTPMessage.m */,
+				1EF7368C1624654600008094 /* FLEmailSender.h */,
+				1EF7368D1624654600008094 /* FLEmailSender.m */,
+			);
+			name = email_sender;
+			sourceTree = "<group>";
+		};
 		65565063AF71C21966CD42D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +172,8 @@
 		655659A70BA0E3BBB3F94B78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EF736851624614300008094 /* CFNetwork.framework */,
+				87D51F7F16065171006BCF53 /* CoreData.framework */,
 				87D51F7516063FD3006BCF53 /* CoreMotion.framework */,
 				65565CCA51703510671066B8 /* SenTestingKit.framework */,
 				6556507CB9F2779530C2809D /* CoreGraphics.framework */,
@@ -139,6 +186,7 @@
 		65565C7E85428AD72E46133E /* flipper */ = {
 			isa = PBXGroup;
 			children = (
+				1EF736741624610500008094 /* email_sender */,
 				87D51F7E1606512B006BCF53 /* coredata_model */,
 				87D51F7B16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld */,
 				87D51F7816064004006BCF53 /* CFlipperMotionManager.h */,
@@ -156,7 +204,6 @@
 		65565E608BB5BA1414A7697D = {
 			isa = PBXGroup;
 			children = (
-				87D51F7F16065171006BCF53 /* CoreData.framework */,
 				65565063AF71C21966CD42D9 /* Products */,
 				655659A70BA0E3BBB3F94B78 /* Frameworks */,
 				65565C7E85428AD72E46133E /* flipper */,
@@ -288,6 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF736871624637E00008094 /* Base64Transcoder.m in Sources */,
+				1EF736881624637E00008094 /* HSK_CFUtilities.m in Sources */,
+				1EF736891624637E00008094 /* NSData+Base64Additions.m in Sources */,
+				1EF7368A1624637E00008094 /* NSStream+SKPSMTPExtensions.m in Sources */,
+				1EF7368B1624637E00008094 /* SKPSMTPMessage.m in Sources */,
 				65565119FBA3E74BB7FB79A5 /* main.m in Sources */,
 				65565FFDB60FCFAC802D3CE7 /* FLAppDelegate.m in Sources */,
 				6556567EF5D782B9FB23AE47 /* FLAccelerometerTestViewController.m in Sources */,
@@ -295,6 +347,7 @@
 				87D51F7D16064C03006BCF53 /* MCDFlipperModel.xcdatamodeld in Sources */,
 				87D51F831606539F006BCF53 /* CMGyroData+CMGyroData_CoreDataConverter.m in Sources */,
 				87D51F86160654EB006BCF53 /* CMAccelerometerData+CMAccelerometerData_CoreDataConverter.m in Sources */,
+				1EF7368E1624654600008094 /* FLEmailSender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +356,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				655651690B65D14BB03E1C59 /* flipperTests.m in Sources */,
+				1EF736801624611800008094 /* Base64Transcoder.m in Sources */,
+				1EF736811624611800008094 /* HSK_CFUtilities.m in Sources */,
+				1EF736821624611800008094 /* NSData+Base64Additions.m in Sources */,
+				1EF736831624611800008094 /* NSStream+SKPSMTPExtensions.m in Sources */,
+				1EF736841624611800008094 /* SKPSMTPMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,11 +471,14 @@
 		6556588EE95597E857AAAC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Владимир Васильев (2MVDBXK2U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flipper/flipper-Prefix.pch";
 				INFOPLIST_FILE = "flipper/flipper-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87CCAE05-D977-4DFE-B16B-79B9CE705566";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -425,11 +486,14 @@
 		655659B0274AC0C586A8DE5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Владимир Васильев (2MVDBXK2U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flipper/flipper-Prefix.pch";
 				INFOPLIST_FILE = "flipper/flipper-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87CCAE05-D977-4DFE-B16B-79B9CE705566";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
